@@ -30,6 +30,8 @@ function draw() {
   if (canvas.getContext) {
     var ctx = canvas.getContext('2d');
 
+    ctx.rotate(10 * Math.PI/-150);
+
     x1=75;  y1=50; x2=100; y2=75; x3=100; y3=25;    
     triangulo(ctx, x1, y1, x2, y2, x3, y3, true);
 
@@ -43,6 +45,11 @@ function draw() {
     rx1=123; ry1=74; rancho=88; ralto=83
     ctx.strokeRect(rx1, ry1, rancho, ralto);
     ctx.strokeRect(rx1-(rancho*s/200), ry1-(ralto*s/200), rancho*(1+s/100), ralto*(1+s/100));
+
+    // Realizar una rotacion 
+    ctx.rotate(10*Math.PI/90);
+    ctx.fillRect(200,50,50,50);
+
   }
 }
 //dibuja();

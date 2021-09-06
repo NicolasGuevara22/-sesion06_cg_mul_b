@@ -33,6 +33,15 @@ function draw() {
     x1=75;  y1=50; x2=100; y2=75; x3=100; y3=25;    
     triangulo(ctx, x1, y1, x2, y2, x3, y3, true);
 
+
+    ctx.translate(200, 80); 
+
+    ctx.rotate(50 * Math.PI / 65 );
+
+    ctx.translate(-200, -80); 
+
+
+
     // Realizar traslacion del triangulo anterior con dx =70 y dy=50
     dx=70;  dy=50;
     triangulo(ctx, x1+dx, y1+dy, x2+dx, y2+dy, x3+dx, y3+dy);
